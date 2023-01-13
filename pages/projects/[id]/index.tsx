@@ -51,7 +51,7 @@ export default function Work({ title, date, details }) {
             <div className="space-y-12">
               {details && details.map((img) => (
                 <a href={img} className="block" key={img}>
-                  <img className="mx-auto" src={img} alt="" />
+                  <img className="mx-auto" src={img} alt="" loading="lazy" />
                 </a>
               ))}
             </div>

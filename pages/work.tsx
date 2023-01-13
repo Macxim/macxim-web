@@ -57,7 +57,7 @@ export default function Work({ allProjectsData }) {
                 <li className="relative flex flex-col col-span-1 overflow-hidden text-center bg-white rounded-md group" key={id}>
                   <Link href={`projects/${id}`}>
                     <div className="flex flex-col flex-1">
-                      <img src={thumb} alt="" />
+                      <img src={thumb} alt="" loading="lazy" />
                     </div>
                     <div className="text-white left-0 top-0 group-hover:visible absolute w-full h-full bg-gradient-to-bl from-zinc-700 via-zinc-900/[96%] to-black invisible flex items-center justify-center transition ease-in-out duration-100">
                       {title}
