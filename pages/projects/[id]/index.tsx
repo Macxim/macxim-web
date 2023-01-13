@@ -45,7 +45,7 @@ export default function Work({ title, date, details }) {
         <section className="mt-6 sm:mt-32 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
           <div className="p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
             <div className="flex items-center justify-between mb-6">
-              <h1 className="mb-6 text-4xl">{title}</h1>
+              <h1 className="text-4xl">{title}</h1>
 
               <p className="text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100"><span className="font-semibold text-zinc-900"><time dateTime={date}>{date}</time></span></p>
             </div>
