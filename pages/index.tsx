@@ -34,7 +34,7 @@ export default function Home() {
         </Link>
       </header>
       <main className="flex flex-col items-center max-w-4xl px-8 overflow-x-hidden overflow-y-auto lg:p-0">
-        <div className="absolute left-0 flex items-center justify-center p-8 top-1/2 left-1/2">
+        <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
         </div>
