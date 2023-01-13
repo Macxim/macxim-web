@@ -6,10 +6,11 @@ import matter from 'gray-matter'
 
 
 export default function Work({ title, date, details }) {
+  const pageTitle = `Maxime Laforet - Work - Project: ${title}`
   return (
     <>
       <Head>
-        <title>Maxime Laforet - Work - Project: {title}</title>
+        <title>{pageTitle}</title>
         <meta name="author" content="Maxime Laforet" />
         <meta name="description" content={`Personal website of Maxime Laforet, front-end / UX developer — Project: ${title}`} />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -36,7 +37,7 @@ export default function Work({ title, date, details }) {
           </svg>
         </Link>
       </header>
-      <main className="flex flex-col items-center max-w-6xl px-8 lg:p-0 mb-24">
+      <main className="flex flex-col items-center max-w-6xl px-8 mb-24 lg:p-0">
         <div className="absolute left-0 flex items-center justify-center p-8 top-1/2 left-1/2">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
