@@ -1,0 +1,20 @@
+---
+title: "Arkadiko App"
+date: "2021-04-01"
+thumb: "/thumbs/arkadiko-app-thumb.png"
+details:
+  - "/full/arkadiko/arkadiko-app-swap.png"
+  - "/full/arkadiko/arkadiko-app-swap-d.png"
+  - "/full/arkadiko/arkadiko-app-stake.png"
+  - "/full/arkadiko/arkadiko-app-stake-d.png"
+  - "/full/arkadiko/arkadiko-app-borrow.png"
+  - "/full/arkadiko/arkadiko-app-borrow-d.png"
+  - "/full/arkadiko/arkadiko-app-governance.png"
+  - "/full/arkadiko/arkadiko-app-governance-d.png"
+  - "/full/arkadiko/arkadiko-app-liquidations.png"
+  - "/full/arkadiko/arkadiko-app-liquidations-d.png"
+  - "/full/arkadiko/arkadiko-app-onboarding-1.png"
+  - "/full/arkadiko/arkadiko-app-onboarding-2.png"
+  - "/full/arkadiko/arkadiko-app-onboarding-3.png"
+  - "/full/arkadiko/arkadiko-app-onboarding-4.png"
+---
