@@ -42,12 +42,11 @@ export default function Work({ title, date, details }) {
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
         </div>
-        <section className="mt-6 sm:mt-32 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
+        <section className="md:min-w-[40rem] lg:min-w-[56rem] xl:min-w-[72rem] mt-6 sm:mt-32 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
           <div className="p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
-            <div className="flex items-center justify-between mb-6">
-              <h1 className="text-4xl">{title}</h1>
-
-              <p className="text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100"><span className="font-semibold text-zinc-900"><time dateTime={date}>{date}</time></span></p>
+            <div className="mb-6 sm:flex sm:items-center sm:justify-between">
+              <h1 className="mb-1 text-4xl sm:mb-0">{title}</h1>
+              <p className="inline sm:block text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100"><span className="font-semibold text-zinc-900"><time dateTime={date}>{date}</time></span></p>
             </div>
             <div className="space-y-12">
               {details && details.map((img) => (
