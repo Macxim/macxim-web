@@ -33,7 +33,7 @@ export default function Home() {
           Work
         </Link>
       </header>
-      <main className="flex flex-col items-center max-w-4xl px-8 overflow-x-hidden overflow-y-auto lg:p-0">
+      <main className="flex flex-col items-center max-w-4xl px-8 mb-24 overflow-x-hidden overflow-y-auto lg:p-0">
         <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
@@ -48,7 +48,7 @@ export default function Home() {
 
             <p className="mt-1">When not working, I enjoy spending time with my family 👨‍👩‍👧‍👦 or playing table tennis 🏓.</p>
 
-            <div className="flex justify-between mt-8">
+            <div className="mt-8 sm:flex sm:justify-between">
               <ul className="flex space-x-4">
                 <li>
                   <a title="Twitter" href="https://twitter.com/macxim"><svg className="w-6 h-6 text-gray-900 transition duration-500 opacity-25 fill-current hover:opacity-100 filter-grayscale hover:filter-none"><use xlinkHref="#macxim-Svg--twitter" /></svg></a>
@@ -64,7 +64,7 @@ export default function Home() {
                 </li>
               </ul>
 
-              <p className="text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100">Last updated on <span className="font-semibold text-zinc-900"><time dateTime="2023-01-12" title="Thursday the 12th of January, 2023">2023-01-12</time></span></p>
+              <p className="mt-4 sm:mt-0 text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100">Last updated on <span className="font-semibold text-zinc-900"><time dateTime="2023-01-12" title="Thursday the 12th of January, 2023">2023-01-12</time></span></p>
             </div>
 
           </div>
