@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <section className="flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
           <div className="p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
-            <img src="/maxime-laforet.jpg" alt="A picture of Maxime Laforet" className="w-24 h-24 mb-6 ease-in border-4 border-white rounded-full shadow-md" loading="lazy" />
+            <img src="/maxime-laforet.jpg" alt="A picture of Maxime Laforet" className="w-24 h-24 mb-6 ease-in border-4 border-white rounded-full shadow-md" loading="eager" />
             <h1 className="mb-4 text-4xl">Hello, I&apos;m Maxime</h1>
             <p>I like building beautiful and responsive websites ✨.</p>
 
