@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import MLetter from "../components/m";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -24,17 +22,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@macxim" />
       </Head>
-      <header className="w-full sm:h-24">
-        <Link href="/" className="absolute w-8 h-8 top-8 left-8">
-          <MLetter />
-        </Link>
-        <Link
-          href="/work"
-          className="absolute text-2xl font-semibold transition duration-150 ease-in-out top-8 right-8 hover:text-orange-600 focus:outline-none focus:text-orange-700"
-        >
-          Work
-        </Link>
-      </header>
+      <Header />
       <main className="flex flex-col items-center max-w-4xl px-4 mb-24 overflow-x-hidden overflow-y-auto lg:p-0">
         <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />

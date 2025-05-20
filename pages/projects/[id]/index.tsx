@@ -1,13 +1,33 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import MLetter from "../../../components/m";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { getSortedProjectsData } from "../../../lib/projects";
+import Header from "../../../components/Header";
 
-export default function Work({ title, date, details, content }) {
+export default function Project({ title, date, details, content, prev, next }) {
   const pageTitle = `Maxime Laforet - Work - Project: ${title}`;
+
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft" && prev) {
+        router.push(`/projects/${prev.id}`);
+      } else if (event.key === "ArrowRight" && next) {
+        router.push(`/projects/${next.id}`);
+      } else if (event.key === "Escape") {
+        router.push("/work");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [prev, next, router]);
+
   return (
     <>
       <Head>
@@ -31,29 +51,40 @@ export default function Work({ title, date, details, content }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@macxim" />
       </Head>
-      <header className="absolute top-0 left-0 w-full h-24">
-        <Link href="/" className="absolute w-8 h-8 top-8 left-8">
-          <MLetter />
-        </Link>
-        <Link
-          href="/work"
-          className="absolute text-2xl font-semibold transition duration-150 ease-in-out top-8 right-8 hover:text-orange-600 focus:outline-none focus:text-orange-700"
-        >
-          <svg
-            className="w-8 h-8 mt-0.5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 700 700"
-          >
-            <path d="M249.2 199.36h-79.801a16.8 16.8 0 0 1-16.797-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.813 16.813 0 0 1 11.879-4.918H249.2a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.13 0h-79.801a16.8 16.8 0 0 1-16.8-16.8v-79.798c0-4.457 1.769-8.73 4.921-11.883a16.813 16.813 0 0 1 11.879-4.918h79.801a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.07 0h-79.797a16.8 16.8 0 0 1-16.801-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.815 16.815 0 0 1 11.883-4.918H533.4c4.457 0 8.73 1.77 11.883 4.918a16.815 16.815 0 0 1 4.918 11.883v79.797A16.8 16.8 0 0 1 533.4 199.36zm-284.2 140h-79.801a16.8 16.8 0 0 1-16.797-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.813 16.813 0 0 1 11.879-4.918H249.2a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.13 0h-79.801a16.8 16.8 0 0 1-16.8-16.8v-79.798c0-4.457 1.769-8.73 4.921-11.883a16.813 16.813 0 0 1 11.879-4.918h79.801a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.07 0h-79.797a16.8 16.8 0 0 1-16.801-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.815 16.815 0 0 1 11.883-4.918H533.4c4.457 0 8.73 1.77 11.883 4.918a16.815 16.815 0 0 1 4.918 11.883v79.797A16.8 16.8 0 0 1 533.4 339.36zm-284.2 140h-79.801a16.8 16.8 0 0 1-16.797-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.813 16.813 0 0 1 11.879-4.918H249.2a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.13 0h-79.801a16.8 16.8 0 0 1-16.8-16.8v-79.798c0-4.457 1.769-8.73 4.921-11.883a16.813 16.813 0 0 1 11.879-4.918h79.801a16.8 16.8 0 0 1 16.8 16.801v79.797c0 4.457-1.769 8.73-4.921 11.88a16.787 16.787 0 0 1-11.879 4.921zm142.07 0h-79.797a16.8 16.8 0 0 1-16.801-16.8v-79.798c0-4.457 1.77-8.73 4.918-11.883a16.815 16.815 0 0 1 11.883-4.918H533.4c4.457 0 8.73 1.77 11.883 4.918a16.815 16.815 0 0 1 4.918 11.883v79.797A16.8 16.8 0 0 1 533.4 479.36z" />
-          </svg>
-        </Link>
-      </header>
+      <Header />
       <main className="flex flex-col items-center max-w-6xl px-4 mb-24 lg:p-0">
         <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
         </div>
-        <section className="md:min-w-[40rem] lg:min-w-[56rem] xl:min-w-[72rem] xl:max-w-[72rem] mt-6 sm:mt-32 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
+        <section className="flex-1 max-w-4xl ml-auto">
+          <div className="flex justify-end ml-0">
+            <div className="border divide-x rounded-md shadow-sm bg-white/90 backdrop-blur-sm border-zinc-900/5">
+              {prev ? (
+                <a
+                  className="inline-flex items-center justify-center px-4 py-2 hover:bg-zinc-100/50 hover:rounded-l-md"
+                  href={`/projects/${prev.id}`}
+                >
+                  ←
+                </a>
+              ) : (
+                <div />
+              )}
+
+              {next ? (
+                <a
+                  className="inline-flex items-center justify-center px-4 py-2 hover:bg-zinc-100/50 hover:rounded-r-md"
+                  href={`/projects/${next.id}`}
+                >
+                  →
+                </a>
+              ) : (
+                <div />
+              )}
+            </div>
+          </div>
+        </section>
+        <section className="max-w-4xl mt-6 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100">
           <div className="p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
             <div className="mb-6 sm:flex sm:items-center sm:justify-between">
               <h1 className="mb-1 text-4xl sm:mb-0">{title}</h1>
@@ -102,6 +133,16 @@ export async function getStaticProps(context) {
   const path = require("path");
   const projectId = context.params.id;
 
+  // Get sorted list of all projects
+  const projects = getSortedProjectsData();
+  const currentIndex = projects.findIndex(
+    (project) => project.id === projectId
+  );
+
+  const prev = currentIndex > 0 ? projects[currentIndex - 1] : null;
+  const next =
+    currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+
   const projectData = fs.readFileSync(
     path.join(process.cwd(), `./projects/${projectId}.md`),
     "utf8"
@@ -115,8 +156,11 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      id: projectId,
       ...matterResult.data,
       content: contentHtml,
+      prev,
+      next,
     },
   };
 }

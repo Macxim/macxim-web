@@ -4,6 +4,7 @@ import Link from "next/link";
 import MLetter from "../components/m";
 
 import { getSortedProjectsData } from "../lib/projects";
+import Header from "../components/Header";
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData();
@@ -35,29 +36,19 @@ export default function Work({ allProjectsData }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@macxim" />
       </Head>
-      <header className="absolute top-0 left-0 w-full h-24">
-        <Link href="/" className="absolute w-8 h-8 top-8 left-8">
-          <MLetter />
-        </Link>
-        <Link
-          href="/"
-          className="absolute text-2xl font-semibold transition duration-150 ease-in-out top-8 right-8 hover:text-orange-600 focus:outline-none focus:text-orange-700"
-        >
-          About
-        </Link>
-      </header>
+      <Header />
       <main className="flex flex-col items-center max-w-6xl px-4 mb-24 lg:p-0">
         <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
         </div>
-        <section className="md:min-w-[40rem] lg:min-w-[56rem] xl:min-w-[72rem] mt-6 sm:mt-32 flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
+        <section className="max-w-4xl flex-1 p-[0.5px] text-2xl leading-normal rounded-md shadow-sm bg-gradient-to-l from-zinc-50 via-zinc-300 to-zinc-100 ">
           <div className="relative p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
             <h1 className="text-4xl">Work & projects</h1>
 
             <ul
               role="list"
-              className="relative grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+              className="relative grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3"
             >
               {allProjectsData.map(({ id, title, thumb }) => (
                 <li
