@@ -12,7 +12,7 @@ export default function Header() {
   const linkText = isWorkPage ? "About" : "Work";
 
   return (
-    <header className="w-full max-w-4xl px-4 py-12 lg:px-0">
+    <header className="w-full max-w-4xl sm:min-w-4xl px-4 py-12 lg:px-0">
       <div className="flex items-center justify-between">
         <Link href="/" className="w-8 h-8">
           <MLetter />
