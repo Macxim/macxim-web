@@ -33,10 +33,10 @@ export default function Project({ title, date, details, content, prev, next }) {
   }, [handleKeyDown]);
 
   useEffect(() => {
-    if (content) {
+    if (details) {
       setLoading(false);
     }
-  }, [content]);
+  }, [details]);
 
   return (
     <>
