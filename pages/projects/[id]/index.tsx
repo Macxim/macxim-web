@@ -2,20 +2,20 @@ import Head from "next/head";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
 import { getSortedProjectsData } from "../../../lib/projects";
 import Header from "../../../components/Header";
 import Loading from "../../../components/Loading";
 
 export default function Project({ title, date, details, content, prev, next }) {
-  const pageTitle = `Maxime Laforet - Work - Project: ${title}`;
+  const router = useRouter();
   const [loading, setLoading] = useState(true);
 
-  const router = useRouter();
+  const pageTitle = `Maxime Laforet - Work - Project: ${title}`;
 
-  useEffect(() => {
-    const handleKeyDown = (event) => {
+  const handleKeyDown = useCallback(
+    (event) => {
       if (event.key === "ArrowLeft" && prev) {
         router.push(`/projects/${prev.id}`);
       } else if (event.key === "ArrowRight" && next) {
@@ -23,11 +23,14 @@ export default function Project({ title, date, details, content, prev, next }) {
       } else if (event.key === "Escape") {
         router.push("/work");
       }
-    };
+    },
+    [prev, next, router]
+  );
 
+  useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [prev, next, router]);
+  }, [handleKeyDown]);
 
   useEffect(() => {
     if (content) {
@@ -99,7 +102,7 @@ export default function Project({ title, date, details, content, prev, next }) {
               <div className="p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
                 <div className="mb-6 sm:flex sm:items-center sm:justify-between">
                   <h1 className="mb-1 text-4xl sm:mb-0">{title}</h1>
-                  <p className="inline sm:block text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-50 border border-zinc-100">
+                  <p className="inline sm:block text-sm text-zinc-600 rounded-lg px-2 py-0.5 bg-zinc-100 border border-zinc-200/80">
                     <span className="font-semibold text-zinc-900">
                       <time dateTime={date}>{date}</time>
                     </span>
@@ -156,7 +159,6 @@ export async function getStaticProps(context) {
   const currentIndex = projects.findIndex(
     (project) => project.id === projectId
   );
-
   const prev = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const next =
     currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;

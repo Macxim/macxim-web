@@ -18,7 +18,7 @@ export default function Loading() {
           <animate
             attributeName="stroke-dashoffset"
             calcMode="spline"
-            dur="3"
+            dur="1"
             values="685;-685"
             keySplines="0 0 1 1"
             repeatCount="indefinite"

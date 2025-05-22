@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import MLetter from "./m";
+import MLetter from "./M";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
   const linkText = isWorkPage ? "About" : "Work";
 
   return (
-    <header className="w-full max-w-4xl sm:min-w-4xl px-4 py-12 lg:px-0">
+    <header className="w-full max-w-4xl px-4 py-12 sm:min-w-4xl lg:px-0">
       <div className="flex items-center justify-between">
         <Link href="/" className="w-8 h-8">
           <MLetter />
