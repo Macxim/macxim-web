@@ -119,12 +119,7 @@ export default function Project({ title, date, details, content, prev, next }) {
                   {details &&
                     details.map((img) => (
                       <a href={img} className="block" key={img}>
-                        <img
-                          className="mx-auto"
-                          src={img}
-                          alt=""
-                          loading="lazy"
-                        />
+                        <img className="mx-auto" src={img} alt="" />
                       </a>
                     ))}
                 </div>
