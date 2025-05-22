@@ -4,7 +4,7 @@ export default function Loading() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 300 150"
-        className="w-20 h-auto text-zinc-900"
+        className="w-20 h-auto mx-auto text-zinc-900"
       >
         <path
           fill="none"
