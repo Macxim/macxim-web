@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import MLetter from "./M";
 import { usePathname } from "next/navigation";
+import MLetter from "./M";
 
 export default function Header() {
   const pathname = usePathname();
