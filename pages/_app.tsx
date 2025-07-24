@@ -5,7 +5,7 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <PageTransition>
-      <div className="min-w-[28rem] md:min-w-[46rem]">
+      <div className="md:min-w-[46rem]">
         <Component {...pageProps} />
       </div>
     </PageTransition>
