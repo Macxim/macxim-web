@@ -23,7 +23,6 @@ details:
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Miner-Profile-full.png"
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Mining-Profile-2-full.png"
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Mining-Profile-full.png"
-  - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Mining.png"
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Pool-Miners-full.png"
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Profile-full.png"
   - "/full/stacks-foundation/stacks-foundation-Decentralized-Stacking-Pool-Removal-Negative-full.png"
