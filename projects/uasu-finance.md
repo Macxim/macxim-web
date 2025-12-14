@@ -5,6 +5,8 @@ thumb: "/thumbs/uasu-thumb.png"
 details:
   - "/full/uasu-old.png"
   - "/full/uasu-new.png"
+excerpt: "Marketing site redesign for crypto stablecoin protocol. Replaced generic fintech styling with bold dark-mode interface inspired by trading dashboards to build trust."
+tags: ["Figma", "Brand Design", "Web3", "Before/After"]
 ---
 
 # Website Redesign

@@ -7,6 +7,8 @@ details:
   - "/full/stackingtracker/stackingtracker-lsts.png"
   - "/full/stackingtracker/stackingtracker-pools.png"
   - "/full/stackingtracker/stackingtracker-positions.png"
+excerpt: "Real-time dashboard for Stacks blockchain staking analytics. Built responsive React/Next.js interface translating complex on-chain data into accessible insights."
+tags: ["React", "Next.js", "Tailwind CSS", "Data Visualization"]
 ---
 
 ### [Stacking Tracker](https://www.stacking-tracker.com/)

@@ -36,7 +36,7 @@ export default function Home({ allProjectsData }) {
       </Head>
       <Header />
 
-      <main className="flex flex-col items-center max-w-4xl px-4 mb-8 overflow-x-hidden overflow-y-auto sm:min-w-4xl lg:p-0">
+      <main className="flex flex-col items-center max-w-4xl px-4 mb-16 overflow-x-hidden overflow-y-auto sm:min-w-4xl lg:p-0">
         <div className="absolute left-0 flex items-center justify-center hidden p-8 top-1/2 left-1/2 md:block">
           <div className="bg-gradient-to-tr from-zinc-50 to-zinc-600 rounded-full w-[500px] h-[200px] absolute -rotate-12 blur-2xl -left-[64px] -top-[170px] opacity-30 md:opacity-100" />
           <div className="bg-gradient-to-bl from-orange-300 to-orange-600 rounded-full w-[500px] h-[180px] z-[-1] absolute blur-2xl -right-8 -top-8 rotate-8 opacity-30 md:opacity-100" />
@@ -114,10 +114,10 @@ export default function Home({ allProjectsData }) {
       </main>
 
       <section className="flex flex-col items-center max-w-4xl px-4 mb-24 overflow-x-hidden overflow-y-auto sm:min-w-4xl lg:p-0">
-        <div className="w-full p-6 border rounded-md md:p-8 bg-white/90 backdrop-blur-sm border-zinc-900/5">
-          <h2 className="mb-8 text-3xl">Work</h2>
+        <div className="w-full p-6 border rounded-md md:p-8 bg-zinc-800 border-zinc-900/5">
+          <h2 className="mb-8 text-3xl text-white">Work</h2>
 
-          <div className="space-y-16">
+          <div className="space-y-24">
             {allProjectsData.map((project, index) => (
               <article key={project.id} className="group">
                 <Link href={`/projects/${project.id}`}>
@@ -135,23 +135,23 @@ export default function Home({ allProjectsData }) {
                 </Link>
 
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="text-2xl font-bold text-zinc-900">
+                  <h3 className="text-2xl font-bold text-zinc-200">
                     <Link
                       href={`/projects/${project.id}`}
-                      className="transition-colors hover:text-zinc-600"
+                      className="transition-colors hover:text-zinc-300"
                     >
                       {project.title}
                     </Link>
                   </h3>
                   {project.date && (
-                    <span className="mt-1 text-sm text-zinc-400 whitespace-nowrap">
+                    <span className="mt-1 text-base text-zinc-300 whitespace-nowrap">
                       {new Date(project.date).getFullYear()}
                     </span>
                   )}
                 </div>
 
                 {project.excerpt && (
-                  <p className="mb-3 text-lg leading-relaxed text-zinc-600">
+                  <p className="mb-3 text-lg leading-relaxed text-zinc-200">
                     {project.excerpt}
                   </p>
                 )}
@@ -161,17 +161,11 @@ export default function Home({ allProjectsData }) {
                     project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 text-sm rounded-full bg-zinc-100 text-zinc-600"
+                        className="px-3 py-1 text-sm rounded-full bg-zinc-50 text-zinc-800"
                       >
                         {tag}
                       </span>
                     ))}
-                  <Link
-                    href={`/projects/${project.id}`}
-                    className="flex items-center gap-1 ml-auto text-sm transition-colors text-zinc-900 hover:text-zinc-600"
-                  >
-                    View case study
-                  </Link>
                 </div>
               </article>
             ))}

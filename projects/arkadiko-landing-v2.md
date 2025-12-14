@@ -7,6 +7,8 @@ details:
   - "/full/arkadiko/arkadiko-landingv2-mobile.png"
   - "/full/arkadiko/arkadiko-landingv2-mobile-menu.png"
   - "/full/arkadiko/arkadiko-landingv2-more.png"
+excerpt: "Simplified landing page redesign distilling DeFi protocol into three product sections. Designed in Figma and built lightweight static site with improved navigation."
+tags: ["HTML", "CSS", "Figma", "Landing Page"]
 ---
 
 [Marketing Site v2](https://arkadiko.finance)

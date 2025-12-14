@@ -4,6 +4,8 @@ date: "2025-05-01"
 thumb: "/thumbs/arkadiko-landingv3-thumb.png"
 details:
   - "/full/arkadiko/arkadiko-landingv3-full.png"
+excerpt: "Full marketing site redesign for Bitcoin-backed DeFi protocol. Created modern interface with clear visual hierarchy to explain complex concepts and drive user conversion."
+tags: ["Next.js", "Figma", "Responsive Design", "Marketing Site"]
 ---
 
 [Marketing Site](https://arkadiko.finance/) • [USDA Stablecoin Site](https://usda.arkadiko.finance/)

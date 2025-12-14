@@ -5,6 +5,8 @@ thumb: "/thumbs/stxeco-thumb.png"
 details:
   - "/full/stxeco-v1-full.png"
   - "/full/stxeco-v2-full.png"
+excerpt: "Designed and built voting portal for Stacks Nakamoto upgrade. Created accessible interface guiding community through governance process and voting timelines."
+tags: ["Next.js", "Design", "Web3", "Governance"]
 ---
 
 [Blog post and tutorial](https://stacks.org/nakamoto-voting-tutorial)
