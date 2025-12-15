@@ -4,6 +4,8 @@ date: "2022-03-01"
 thumb: "/thumbs/dkron-thumb.png"
 details:
   - "/full/dkron-full.png"
+excerpt: "Documentation site redesign for distributed job scheduling system. Modernized outdated layout with improved typography and hierarchy using Tailwind CSS."
+tags: ["Figma", "Tailwind CSS", "Documentation Design", "UI Redesign"]
 ---
 
 ### Dkron – Documentation Site Redesign
