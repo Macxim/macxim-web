@@ -9,6 +9,7 @@ details:
   - "/full/stackingdao/stackingdao-analytics.png"
 excerpt: "Built staking platform UI for Bitcoin-native protocol. Translated Figma designs into React/Next.js interface with focus on simplifying complex delegation workflows."
 tags: ["React", "Next.js", "Figma", "Web3", "Dashboard"]
+order: 2
 ---
 
 ### [Stacking DAO App](https://app.stackingdao.com/)

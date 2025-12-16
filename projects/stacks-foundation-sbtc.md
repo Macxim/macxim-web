@@ -40,6 +40,7 @@ details:
 
 excerpt: "Led UX/UI design for sBTC infrastructure tools commissioned by Stacks Foundation. Created design system and user flows for bridge, signer dashboard, and staking tools."
 tags: ["Figma", "Design System", "UX Design", "Web3"]
+order: 5
 ---
 
 ## UX/UI Design for sBTC Infrastructure Tools (Apr 2024 – Sep 2024)

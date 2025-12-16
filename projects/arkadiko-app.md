@@ -22,6 +22,7 @@ details:
   - "/full/arkadiko/arkadiko-analytics-balances.png"
 excerpt: "Complete DeFi application for Bitcoin-backed stablecoin protocol. Led front-end implementation for swap, lending, staking, and governance features from launch."
 tags: ["Next.js", "React", "Tailwind CSS", "DeFi", "Design System"]
+order: 1
 ---
 
 **Overview**

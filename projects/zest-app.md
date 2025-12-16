@@ -16,6 +16,7 @@ details:
   - "/full/zest/zest-app-borrower-form.png"
 excerpt: "End-to-end brand and product design for Bitcoin lending protocol. Created logo, designed complete application interface, and built marketing site from inception."
 tags: ["Figma", "React", "Next.js", "Brand Design", "Web3"]
+order: 3
 ---
 
 ### [Zest Protocol](https://www.zestprotocol.com/)

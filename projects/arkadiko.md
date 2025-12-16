@@ -3,7 +3,6 @@ title: "Arkadiko Marketing Sites"
 date: "2022-05-01"
 thumb: "/thumbs/arkadiko-landingv3-thumb.png"
 excerpt: "Iterations of marketing site design for Bitcoin DeFi protocol. Led redesigns from simplified landing page to comprehensive brand overhaul with modern aesthetic."
-tags: ["Figma", "Next.js", "HTML/CSS", "Brand Design", "Web3"]
 details:
   - "/full/arkadiko/arkadiko-v3-full.png"
   - "/full/arkadiko/arkadiko-landingv2-full.png"
@@ -15,6 +14,8 @@ details:
   - "/full/arkadiko/arkadiko-typography.png"
   - "/full/arkadiko/arkadiko-web-header.png"
   - "/full/arkadiko/arkadiko-press.png"
+tags: ["Figma", "Next.js", "HTML/CSS", "Brand Design", "Web3"]
+order: 4
 ---
 
 ### Arkadiko Protocol – Marketing Site Evolution

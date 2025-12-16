@@ -18,6 +18,7 @@ details:
   - "/full/intuo/intuo-organisation-activity.png"
 excerpt: "Front-end and UX development for a SaaS platform focused on team management and performance. Built and scaled a design system while improving onboarding flows and dashboard usability."
 tags: ["Ember.js", "UX/UI", "Design System", "SaaS", "Ruby on Rails"]
+order: 10
 ---
 
 ### Intuo (U4TM) – Front-End & UX Development

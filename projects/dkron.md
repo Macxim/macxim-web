@@ -6,6 +6,7 @@ details:
   - "/full/dkron-full.png"
 excerpt: "Documentation site redesign for distributed job scheduling system. Modernized outdated layout with improved typography and hierarchy using Tailwind CSS."
 tags: ["Figma", "Tailwind CSS", "Documentation Design", "UI Redesign"]
+order: 8
 ---
 
 ### Dkron – Documentation Site Redesign
