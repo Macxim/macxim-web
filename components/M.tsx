@@ -1,8 +1,8 @@
 import * as React from "react";
 
-const MLetter = () => (
+const MLetter = ({ className }) => (
   <svg
-    className="w-8 h-8"
+    className={className}
     viewBox="0 0 152 141"
     xmlns="http://www.w3.org/2000/svg"
   >
