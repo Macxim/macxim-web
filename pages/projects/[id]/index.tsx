@@ -60,19 +60,21 @@ export default function Project({
 
       <Header />
 
-      <main className="min-h-screen px-4 py-12">
+      <main id="main-content" role="main" className="min-h-screen px-4 py-12">
         <div className="max-w-5xl mx-auto">
           {/* Back to Home + Navigation */}
           <div className="flex items-center justify-between mb-8">
             <Link
               href="/"
               className="flex items-center gap-2 transition-colors text-zinc-600 hover:text-zinc-900"
+              aria-label="Go back to home page"
             >
               <svg
                 className="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -91,12 +93,14 @@ export default function Project({
                   href={`/projects/${prev.id}`}
                   className="p-2 transition-colors bg-white border rounded-lg border-zinc-200 hover:bg-zinc-50"
                   title={`Previous: ${prev.title}`}
+                  aria-label={`Go to previous project: ${prev.title}`}
                 >
                   <svg
                     className="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -129,12 +133,14 @@ export default function Project({
                   href={`/projects/${next.id}`}
                   className="p-2 transition-colors bg-white border rounded-lg border-zinc-200 hover:bg-zinc-50"
                   title={`Next: ${next.title}`}
+                  aria-label={`Go to next project: ${next.title}`}
                 >
                   <svg
                     className="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -245,19 +251,21 @@ export default function Project({
             </div>
 
             {/* Footer Navigation */}
-            <footer className="px-8 py-8 border-t lg:px-12 border-zinc-200 bg-zinc-50">
-              <div className="flex items-center justify-between">
+            <footer className="px-4 py-6 border-t sm:px-8 lg:px-12 sm:py-8 border-zinc-200 bg-zinc-50">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 {prev ? (
                   <Link
                     href={`/projects/${prev.id}`}
-                    className="flex items-center gap-3 group max-w-[45%]"
+                    className="flex items-center gap-3 group"
+                    aria-label={`Go to previous project: ${prev.title}`}
                   >
-                    <div className="p-2 transition-colors bg-white border rounded-lg border-zinc-200 group-hover:bg-zinc-100">
+                    <div className="flex-shrink-0 p-2 transition-colors bg-white border rounded-lg border-zinc-200 group-hover:bg-zinc-100">
                       <svg
                         className="w-5 h-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -269,32 +277,28 @@ export default function Project({
                     </div>
                     <div className="min-w-0">
                       <div className="mb-1 text-sm text-zinc-500">Previous</div>
-                      <div className="font-medium truncate transition-colors text-zinc-900 group-hover:text-zinc-600">
+                      <div className="font-medium transition-colors text-zinc-900 group-hover:text-zinc-600">
                         {prev.title}
                       </div>
                     </div>
                   </Link>
                 ) : (
-                  <div />
+                  <div className="hidden sm:block" />
                 )}
 
                 {next ? (
                   <Link
                     href={`/projects/${next.id}`}
-                    className="flex items-center gap-3 group max-w-[45%] ml-auto"
+                    className="flex items-center gap-3 group sm:flex-row-reverse sm:text-right"
+                    aria-label={`Go to next project: ${next.title}`}
                   >
-                    <div className="min-w-0 text-right">
-                      <div className="mb-1 text-sm text-zinc-500">Next</div>
-                      <div className="font-medium truncate transition-colors text-zinc-900 group-hover:text-zinc-600">
-                        {next.title}
-                      </div>
-                    </div>
-                    <div className="p-2 transition-colors bg-white border rounded-lg border-zinc-200 group-hover:bg-zinc-100">
+                    <div className="flex-shrink-0 p-2 transition-colors bg-white border rounded-lg border-zinc-200 group-hover:bg-zinc-100">
                       <svg
                         className="w-5 h-5"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -304,9 +308,15 @@ export default function Project({
                         />
                       </svg>
                     </div>
+                    <div className="min-w-0">
+                      <div className="mb-1 text-sm text-zinc-500">Next</div>
+                      <div className="font-medium transition-colors text-zinc-900 group-hover:text-zinc-600">
+                        {next.title}
+                      </div>
+                    </div>
                   </Link>
                 ) : (
-                  <div />
+                  <div className="hidden sm:block" />
                 )}
               </div>
             </footer>

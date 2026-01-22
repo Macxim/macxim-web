@@ -3,12 +3,16 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-      <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap"
-        rel="stylesheet"
-      />
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body className="flex flex-col items-center justify-center min-h-screen overflow-x-hidden font-sans font-normal bg-gradient-to-tr from-white via-zinc-900/5 to-white">
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <div className="hidden">
           <svg className="invisible w-0 h-0" xmlns="http://www.w3.org/2000/svg">
             <symbol id="macxim-Svg--github" viewBox="0 0 32 32">

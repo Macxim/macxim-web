@@ -38,7 +38,7 @@ export default function Home({ allProjectsData }) {
       </Head>
       <Header />
 
-      <main className="min-h-screen px-4 py-12">
+      <main id="main-content" role="main" className="min-h-screen px-4 py-12">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
             <aside className="lg:col-span-4">
@@ -95,7 +95,7 @@ export default function Home({ allProjectsData }) {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-zinc-500">Tenerife, Spain</span>
+                    <span className="text-zinc-500">Working remotely in Tenerife, Spain</span>
                   </div>
 
                   <a
