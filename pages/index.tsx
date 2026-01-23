@@ -19,18 +19,18 @@ export default function Home({ allProjectsData }) {
   return (
     <>
       <Head>
-        <title>Maxime Laforet - Design Engineer</title>
+        <title>Maxime Laforet - Front-End Developer</title>
         <meta name="author" content="Maxime Laforet" />
         <meta
           name="description"
-          content="Design engineer specializing in Next.js, React, and TypeScript. Building polished interfaces where design and code meet."
+          content="Front-End Developer specializing in Next.js, React, and TypeScript. Building polished interfaces where design and code meet."
         />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta property="og:title" content="Maxime Laforet - Design Engineer" />
+        <meta property="og:title" content="Maxime Laforet - Front-End Developer" />
         <meta property="og:image" content="/maxime-laforet.jpg" />
         <meta
           property="og:description"
-          content="Design engineer specializing in Next.js, React, and TypeScript"
+          content="Front-End Developer specializing in Next.js, React, and TypeScript"
         />
         <meta property="og:url" content="https://macx.im" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -58,20 +58,18 @@ export default function Home({ allProjectsData }) {
                   </h1>
 
                   <p className="mb-6 text-lg text-zinc-600">
-                    UX/UI Front End Design Engineer
+                    Front-End Developer
                   </p>
 
                   <div className="mb-8 space-y-4 text-zinc-800">
                     <p>
-                      Front-end developer and designer building responsive web
+                      Front-End Developer building responsive web
                       applications. Specializing in translating design mockups
-                      into clean, maintainable code using React, Next.js, and
+                      into clean, maintainable code using React, Next.js, TypeScript and
                       modern CSS.
                     </p>
                     <p>
-                      10+ years working on blockchain platforms and enterprise
-                      SaaS tools. Most interested in projects where I contribute
-                      to both interface design and technical implementation.
+                      10+ years turning designs into performant, maintainable code.
                     </p>
                   </div>
 
@@ -154,7 +152,7 @@ export default function Home({ allProjectsData }) {
                               src={project.thumb}
                               alt={`${project.title} screenshot`}
                               fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                               priority={index === 0}
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
                             />

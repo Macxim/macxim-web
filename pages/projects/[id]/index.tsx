@@ -237,7 +237,7 @@ export default function Project({
                         <Image
                           src={img}
                           alt={`${title} screenshot ${index + 1}`}
-                          className="w-full transition-transform duration-300 group-hover:scale-105"
+                          className="w-full transition-transform duration-300 group-hover:scale-[1.02]"
                           width={1200} // adjust to your real image size
                           height={675} // keep aspect ratio
                           priority={index === 0}
