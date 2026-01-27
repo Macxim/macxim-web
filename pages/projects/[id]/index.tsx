@@ -238,8 +238,8 @@ export default function Project({
                           src={img}
                           alt={`${title} screenshot ${index + 1}`}
                           className="w-full transition-transform duration-300 group-hover:scale-[1.02]"
-                          width={1200} // adjust to your real image size
-                          height={675} // keep aspect ratio
+                          width={1200}
+                          height={675}
                           priority={index === 0}
                           sizes="(max-width: 768px) 100vw, 800px"
                         />
