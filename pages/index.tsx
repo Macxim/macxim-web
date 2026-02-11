@@ -137,6 +137,56 @@ export default function Home({ allProjectsData }) {
             </aside>
 
             <section className="lg:col-span-8">
+              <div className="p-8 bg-white border shadow-sm rounded-2xl border-zinc-200 lg:p-10 mb-6">
+                <h2 className="mb-6 text-3xl font-bold text-zinc-900">
+                  AI Experiments & Lab
+                </h2>
+                <p className="mb-10 text-zinc-600">
+                  A collection of small projects and experiments exploring the intersection of AI and development.
+                  Built with Claude, ChatGPT, and Antigravity.
+                </p>
+
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  {[
+                    {
+                      title: "Polyprompt",
+                      description: "Collaborative multi-agent workspace for complex brainstorming.",
+                      url: "https://github.com/Macxim/Polyprompt",
+                    },
+                    {
+                      title: "Fold",
+                      description: "Modern multi-asset portfolio tracking application.",
+                      url: "https://github.com/Macxim/fold",
+                    },
+                    {
+                      title: "SignalFlow",
+                      description: "Transform ideas into multi-platform content with AI brand voices.",
+                      url: "https://github.com/Macxim/signalflow",
+                    },
+                    {
+                      title: "Qwot",
+                      description: "Minimalist Chrome extension with curated quotes and backgrounds.",
+                      url: "https://github.com/Macxim/qwot/",
+                    },
+                  ].map((project) => (
+                    <a
+                      key={project.title}
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex flex-col p-4 transition-all bg-zinc-50 border border-zinc-200 rounded-xl hover:bg-white hover:shadow-md"
+                    >
+                      <h3 className="mb-1 text-lg font-bold text-zinc-900 group-hover:text-zinc-700">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-zinc-600">
+                        {project.description}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
               <div className="p-8 bg-white border shadow-sm rounded-2xl border-zinc-200 lg:p-10">
                 <h2 className="mb-10 text-3xl font-bold text-zinc-900">
                   Featured Work
