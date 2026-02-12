@@ -43,28 +43,20 @@ tags: ["Figma", "Design System", "UX Design", "Web3"]
 order: 5
 ---
 
-## UX/UI Design for sBTC Infrastructure Tools (Apr 2024 – Sep 2024)
+### The Challenge
+I was commissioned by the Stacks Foundation to lead the UX/UI redesign for a series of critical sBTC infrastructure tools. The goal was to unify a fragmented ecosystem of prototypes into a cohesive, professional suite of applications that could support the early adoption of sBTC.
 
-### Overview
+---
 
-Commissioned by the Stacks Foundation to improve the user experience and interface design for key sBTC infrastructure tools. The goal was to ensure early adopters of sBTC had clear, accessible, and consistent interfaces across multiple applications, streamlining onboarding and interaction.
+## Engineering Consensus Across Tools
+Infrastructure tools—bridges, signers, and simulators—often suffer from "developer UI". My role was to bring a **Design Engineering** perspective to these technical bottlenecks, ensuring they were as accessible as they were robust.
 
-### My Role & Contributions
+**Strategic Execution:**
+- **Unified Design System**: Developed a scalable UI kit in Figma that served as the foundational layer for all bounty teams, ensuring that the sBTC Bridge felt like the same product as the Signer Dashboard.
+- **Workflow Simplification**: Re-engineered complex information architectures and user flows for technical operations (like bridging and block simulation), reducing the cognitive load for early adopters.
+- **Collaborative Unification**: Led workshops and reviews with multiple disparate bounty teams to align their independent implementations with the core visual and UX identity.
 
-**Lead UX/UI Designer**
+---
 
-- Created information architecture and detailed user flows for:
-  - sBTC Bridge
-  - Signer Dashboard / Tools
-  - DeStacking Pool
-  - Block Simulator
-- Conducted team meetings and workshops to gather requirements and suggest wallet integrations and on-ramp solutions.
-- Designed wireframes for each tool based on existing prototypes, refining workflows for clarity and efficiency.
-- Developed a design system to ensure consistent UI elements, typography, and components across all tools.
-
-### Key Highlights
-
-- Collaborated with multiple bounty teams to unify the look and feel across diverse sBTC tools.
-- Delivered a scalable design system for faster, more consistent implementation.
-- Improved usability of critical tools in the sBTC ecosystem through structured wireframing and clear user flows.
-- Supported early adoption efforts by enhancing onboarding experiences for new users.
+### The Impact
+By providing a clear and robust design system, I helped the Stacks Foundation launch a professional suite of tools that are vital for the sBTC ecosystem. The result is a more inviting entry point for developers and users alike, accelerating the growth of Bitcoin-native infrastructure.

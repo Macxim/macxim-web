@@ -1,5 +1,5 @@
 ---
-title: "Zest App"
+title: "Zest Protocol App"
 date: "2022-11-01"
 thumb: "/thumbs/zest-app-thumb.png"
 details:
@@ -19,19 +19,24 @@ tags: ["Figma", "React", "Next.js", "Brand Design", "Web3"]
 order: 3
 ---
 
-### [Zest Protocol](https://www.zestprotocol.com/)
 
-[App](https://app.zestprotocol.com/) • [Docs](https://docs.zestprotocol.com/start) • [GitHub](https://github.com/zest-Protocol/)
+### The Protocol
+Zest Protocol is a premier Bitcoin lending platform designed for institutions and power users. My mission was to build a front-end that mirrored the protocol's high-stakes technical foundation—deliver a user interface that feels solid, professional, and uncompromisingly precise.
 
-**Overview**
+---
 
-Zest Protocol is a decentralized lending protocol built on Bitcoin via the Stacks blockchain. It enables institutions and individuals to participate in on-chain lending, helping unlock the capital potential of Bitcoin in a secure and transparent way.
+## Institutional Design Engineering
+Building a platform for Bitcoin lending requires a visual language that signals **trust** and **sophistication**. I approached the implementation as a bridge between the bank-grade Figma designs and the production-ready React codebase.
 
-**My Role**
+**Technical Highlights:**
+- **High-Density Data**: Developed layout patterns that maintain clarity even when displaying dense financial metrics, utilizing a refined typography system centered on Inter.
+- **Pixel-Perfect Execution**: Led the design-to-code process, ensuring that the final production site was indistinguishable from the approved Figma prototypes.
 
-I joined the project from its inception, shaping the brand and product experience from the ground up. I designed the first-ever Zest logo and built out every screen of the application in Figma—iterating on each flow to meet evolving product needs.
+---
 
-I also designed and implemented Zest's marketing landing page focused on user acquisition, creating a clean, high-conversion layout with compelling messaging. I worked closely with the engineering team throughout, ensuring accurate design implementation and handling static front-end integration for both the app and marketing site.
+### The Impact
+By prioritizing **technical craft** and **visual hierarchy**, I helped Zest launch a platform that stands out in the Bitcoin DeFi space. The result is a high-performance, institutional-grade application that simplifies the complexities of on-chain lending.
+ign implementation and handling static front-end integration for both the app and marketing site.
 
 **Tech & Tools**
 
@@ -47,3 +52,5 @@ I also designed and implemented Zest's marketing landing page focused on user ac
 - Built production-ready marketing landing page with email capture for early growth
 - Enabled smooth design-to-dev workflow by contributing directly to front-end implementation
 - Played a key role in laying the design foundation for the protocol's long-term growth
+
+[App](https://app.zestprotocol.com/) • [Docs](https://docs.zestprotocol.com/start) • [GitHub](https://github.com/zest-Protocol/)

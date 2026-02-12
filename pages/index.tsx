@@ -57,19 +57,19 @@ export default function Home({ allProjectsData }) {
                     Maxime Laforet
                   </h1>
 
-                  <p className="mb-6 text-lg text-zinc-600">
-                    Front-End Developer
+                  <p className="mb-6 text-lg text-zinc-600 font-medium">
+                    Front-End Design Engineer
                   </p>
 
-                  <div className="mb-8 space-y-4 text-zinc-800">
+                  <div className="mb-8 space-y-4 text-zinc-800 leading-relaxed">
                     <p>
-                      Front-End Developer building responsive web
-                      applications. Specializing in translating design mockups
-                      into clean, maintainable code using React, Next.js, TypeScript and
-                      modern CSS.
+                      I bridge the gap between design and
+                      development. I specialize in building highly polished interfaces
+                      using React, Next.js, and TypeScript, and modern CSS.
                     </p>
                     <p>
-                      10+ years turning designs into performant, maintainable code.
+                      10+ years turning complex designs into performant,
+                      maintainable production code.
                     </p>
                   </div>
 
@@ -174,7 +174,7 @@ export default function Home({ allProjectsData }) {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex flex-col p-4 transition-all bg-zinc-50 border border-zinc-200 rounded-xl hover:bg-white hover:shadow-md"
+                      className="group flex flex-col p-4 transition-all bg-zinc-50 border border-zinc-200 rounded-xl hover:bg-white hover:shadow-md hover:-translate-y-1"
                     >
                       <h3 className="mb-1 text-lg font-bold text-zinc-900 group-hover:text-zinc-700">
                         {project.title}
@@ -197,12 +197,12 @@ export default function Home({ allProjectsData }) {
                     <React.Fragment key={project.id}>
                       <article key={project.id} className="group">
                         <Link href={`/projects/${project.id}`}>
-                          <div className="relative block mb-4 overflow-hidden shadow-sm cursor-pointer rounded-xl bg-zinc-100 aspect-video">
+                          <div className="relative block mb-4 overflow-hidden shadow-sm cursor-pointer rounded-xl bg-zinc-100 aspect-video transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
                             <Image
                               src={project.thumb}
                               alt={`${project.title} screenshot`}
                               fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                              className="object-cover transition-opacity duration-300 group-hover:opacity-90"
                               priority={index === 0}
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 800px"
                             />

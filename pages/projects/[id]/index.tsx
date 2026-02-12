@@ -110,23 +110,7 @@ export default function Project({
                     />
                   </svg>
                 </Link>
-              ) : (
-                <div className="p-2 opacity-0">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 19l-7-7 7-7"
-                    />
-                  </svg>
-                </div>
-              )}
+              ) : null}
 
               {next ? (
                 <Link
@@ -150,104 +134,119 @@ export default function Project({
                     />
                   </svg>
                 </Link>
-              ) : (
-                <div className="p-2 opacity-0">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              )}
+              ) : null}
             </div>
           </div>
 
           {/* Project Content */}
           <article className="overflow-hidden bg-white border shadow-sm rounded-2xl border-zinc-200">
             {/* Header */}
-            <header className="px-8 py-10 border-b lg:px-12 lg:py-12 border-zinc-200">
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <h1 className="text-4xl font-bold lg:text-5xl text-zinc-900">
-                  {title}
-                </h1>
-                {date && (
-                  <span className="mt-2 text-sm text-zinc-500 whitespace-nowrap">
-                    {new Date(date).getFullYear()}
-                  </span>
-                )}
-              </div>
-
-              {excerpt && (
-                <p className="mb-6 text-xl leading-relaxed text-zinc-600">
-                  {excerpt}
-                </p>
-              )}
-
-              {tags && tags.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 text-sm rounded-full bg-zinc-100 text-zinc-700"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+            <header className="px-8 py-12 lg:px-12 lg:py-16">
+              <div className="max-w-3xl mx-auto">
+                <div className="flex items-start justify-between gap-4 mb-6">
+                  <h1 className="text-4xl font-bold lg:text-6xl text-zinc-900 tracking-tight leading-[1.1]">
+                    {title}
+                  </h1>
                 </div>
-              )}
+
+                {excerpt && (
+                  <p className="mb-8 text-xl leading-relaxed text-zinc-500 font-medium">
+                    {excerpt}
+                  </p>
+                )}
+
+                {/* Context Row: Tags + Links */}
+                <div className="flex flex-wrap items-center justify-between gap-6 pt-8 border-t border-zinc-100">
+                  {tags && tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 text-xs font-semibold tracking-wide uppercase rounded-full bg-zinc-50 text-zinc-500 border border-zinc-100"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <div className="flex items-center gap-4">
+                    {content?.includes('href="https://app.') || content?.includes('href="https://www.') || content?.includes('site') ? (
+                      (() => {
+                        const match = content.match(/href="(https:\/\/(app|www|arkadiko|zest|stacking|stacks)[^"]+)"/);
+                        return match ? (
+                          <a
+                            href={match[1]}
+                            target="_blank" rel="noopener noreferrer"
+                            className="text-sm font-bold text-zinc-900 hover:text-zinc-600 transition-colors flex items-center gap-2"
+                          >
+                            Launch Project
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                          </a>
+                        ) : null;
+                      })()
+                    ) : null}
+
+                    {content?.includes('href="https://github.com/') && (
+                      <a
+                        href={content.match(/href="(https:\/\/github\.com\/[^"]+)"/)?.[1]}
+                        target="_blank" rel="noopener noreferrer"
+                        className="text-sm font-bold text-zinc-500 hover:text-zinc-900 transition-colors"
+                      >
+                        Source
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
             </header>
 
-            {/* Content */}
-            <div className="px-8 py-10 lg:px-12 lg:py-12">
-              {content && (
-                <div
-                  className="prose prose-lg prose-zinc max-w-none
-                    prose-headings:font-bold prose-headings:text-zinc-900
-                    prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                    prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4
-                    prose-p:text-zinc-700 prose-p:leading-relaxed
-                    prose-a:text-zinc-900 prose-a:underline hover:prose-a:text-zinc-600
-                    prose-strong:text-zinc-900 prose-strong:font-bold
-                    prose-ul:my-6 prose-li:my-2
-                    prose-code:text-zinc-900 prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded"
-                  dangerouslySetInnerHTML={{ __html: content }}
-                />
-              )}
+            {/* Main Content Area */}
+            <div className="px-8 pb-12 lg:px-12 lg:pb-16">
+              <div className="max-w-3xl mx-auto">
+                {content && (
+                  <div
+                    className="prose prose-lg prose-zinc max-w-none
+                      prose-headings:font-bold prose-headings:text-zinc-900
+                      prose-h2:text-3xl prose-h2:mt-24 prose-h2:mb-8 prose-h2:tracking-tight
+                      prose-h3:text-2xl prose-h3:mt-16 prose-h3:mb-6
+                      prose-p:text-zinc-600 prose-p:leading-relaxed prose-p:mb-10
+                      prose-a:text-zinc-900 prose-a:underline hover:prose-a:text-zinc-600
+                      prose-strong:text-zinc-900 prose-strong:font-bold
+                      prose-ul:my-10 prose-li:my-4 prose-li:text-zinc-600
+                      prose-code:text-zinc-900 prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded"
+                    dangerouslySetInnerHTML={{ __html: content }}
+                  />
+                )}
 
-              {/* Project Images */}
-              {details && details.length > 0 && (
-                <div className="mt-16 space-y-8">
-                  {details.map((img, index) => (
-                    <a
-                      href={img}
-                      key={img}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block group"
-                    >
-                      <div className="relative overflow-hidden rounded-xl bg-zinc-100">
-                        <Image
-                          src={img}
-                          alt={`${title} screenshot ${index + 1}`}
-                          className="w-full transition-transform duration-300 group-hover:scale-[1.02]"
-                          width={1200}
-                          height={675}
-                          priority={index === 0}
-                          sizes="(max-width: 768px) 100vw, 800px"
-                        />
+                {/* Project Images */}
+                {details && details.length > 0 && (
+                  <div className="mt-32 space-y-24">
+                    {details.map((img, index) => (
+                      <div key={img} className="space-y-4">
+                        <a
+                          href={img}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block group"
+                        >
+                          <div className="relative overflow-hidden shadow-sm rounded-xl bg-zinc-100 transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-2">
+                            <Image
+                              src={img}
+                              alt={`${title} screenshot ${index + 1}`}
+                              className="w-full"
+                              width={1200}
+                              height={675}
+                              priority={index === 0}
+                              sizes="(max-width: 1024px) 100vw, 800px"
+                            />
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  ))}
-                </div>
-              )}
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Footer Navigation */}

@@ -1,5 +1,5 @@
 ---
-title: "intuo"
+title: "Intuo"
 date: "2021-01-01"
 thumb: "/thumbs/intuo-thumb.png"
 details:
@@ -21,29 +21,20 @@ tags: ["Ember.js", "UX/UI", "Design System", "SaaS", "Ruby on Rails"]
 order: 10
 ---
 
-### Intuo (U4TM) – Front-End & UX Development
+### The Product
+Intuo (now U4TM) is a comprehensive talent management platform that helps organizations handle employee engagement and performance at scale. As a Front-End / UX Developer, I sat at the critical intersection of product design and engineering, ensuring that a complex SaaS product remained both maintainable and intuitive.
 
-**Overview**
+---
 
-Intuo (now U4TM) is a SaaS platform focused on employee engagement, team management, and performance tracking. The product combines structured workflows, dashboards, and onboarding experiences to help organizations manage teams at scale.
+## Scaling Through Systems
+Building for a maturing SaaS requires a focus on **consistency** and **reusability**. I was instrumental in scaling the product's front-end architecture to support rapid feature growth without bloating the code.
 
-**My Role**
+**Key Contributions:**
+- **Design System Architecture**: Built and maintained a company-wide design system in Ember.js, establishing a single source of truth for UI components that accelerated development across multiple teams.
+- **Usability Overhaul**: Led the redesign of core onboarding flows and engagement dashboards, transforming dense performance metrics into actionable insights for managers.
+- **Frontend Craft**: Collaborated deeply with the engineering team to translate complex product specs into performant, elegant code, balancing the needs of a legacy Ruby on Rails backend with modern front-end expectations.
 
-I worked as a Front-End / UX Developer, collaborating closely with the **engineering team** and **product design team**. My role sat at the intersection of implementation and user experience — translating complex product requirements and design specifications into reliable, maintainable front-end code while continuously improving usability.
+---
 
-A key part of my work was building and maintaining the company-wide design system, ensuring visual and interaction consistency across the product as it evolved.
-
-**Tech & Tools**
-
-- Ember.js (primary front-end framework)
-- Ruby on Rails (backend collaboration)
-- HTML & CSS (custom UI and layout work)
-- Postgres & Redis (data layer awareness)
-- Figma and design specs (design-to-code workflow)
-
-**Highlights**
-
-- Translated complex design specs into performant, maintainable front-end features used across the core product.
-- Built and maintained a scalable design system, improving consistency and development speed across teams.
-- Improved onboarding flows and dashboard usability, contributing to better customer retention.
-- Worked long-term on a production SaaS product, balancing new features, refactors, and UX improvements.
+### The Legacy
+My work at Intuo emphasized the value of a **system-first** approach to product development. By building robust components and intuitive workflows, I helped the platform scale its user base while maintaining a high standard of visual and interaction quality.

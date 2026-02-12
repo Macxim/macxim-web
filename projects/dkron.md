@@ -9,28 +9,20 @@ tags: ["Figma", "Tailwind CSS", "Documentation Design", "UI Redesign"]
 order: 8
 ---
 
-### Dkron – Documentation Site Redesign
+### The Project
+Dkron is a distributed job scheduling system built for the cloud-native era. As the system matured, its documentation—the primary entry point for its community—needed a visual and structural modernization to reflect its professional-grade reliability.
 
-[Main Site](https://dkron.io/)
+---
 
-**Overview**
+## Modernizing Technical Resources
+Technical documentation requires a unique balance: it must be high-density yet low-friction. I led the visual redesign to ensure that Dkron’s complexity was matched by a clean, readable presentation.
 
-Dkron is a distributed job scheduling system designed for cloud-native environments. It brings the power of cron jobs to a scalable, fault-tolerant infrastructure — used by teams that need reliable, event-driven automation.
+**Strategic Execution:**
+- **Visual Maturity**: Created a modern layout in Figma that replaced the outdated Docusaurus defaults with a customized Tailwind CSS design system.
+- **Improved Scannability**: Focused on typography and vertical rhythm, ensuring that long technical guides remained inviting rather than overwhelming.
+- **Developer Handoff**: Delivered production-ready design assets that were seamlessly integrated into the existing Docusaurus framework, minimizing implementation friction for the maintainers.
 
-**My Role**
+---
 
-I led the visual redesign of Dkron’s documentation site to modernize its look and feel. The previous design was outdated and not engaging for the community. I created a cleaner, more readable layout in Figma, improving typography, spacing, and overall structure. My design was implemented using Tailwind CSS and integrated into the existing Docusaurus setup.
-
-**Tech & Tools**
-
-- Figma (UI redesign and layout improvements)
-- Tailwind CSS (design system and styling)
-- Docusaurus (existing framework)
-- GitHub (collaboration and handoff)
-
-**Highlights**
-
-- Revamped the visual design of the docs to better reflect the maturity and professionalism of the Dkron project.
-- Focused on readability, clarity, and user trust through thoughtful layout and hierarchy.
-- Enhanced community perception by bringing a more polished and user-friendly experience to the documentation.
-- Delivered design assets that were easy for the development team to implement with minimal friction.
+### The Result
+The redesigned documentation site successfully elevated the professional perception of the Dkron project. By bringing a refined **Design Engineering** eye to a community resource, we enhanced user trust and improved the overall onboarding experience for new adopters.
