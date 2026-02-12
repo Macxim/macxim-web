@@ -19,18 +19,18 @@ export default function Home({ allProjectsData }) {
   return (
     <>
       <Head>
-        <title>Maxime Laforet - Front-End Developer</title>
+        <title>Maxime Laforet - UI Engineer</title>
         <meta name="author" content="Maxime Laforet" />
         <meta
           name="description"
-          content="Front-End Developer specializing in Next.js, React, and TypeScript. Building polished interfaces where design and code meet."
+          content="UI Engineer specializing in Next.js, React, and TypeScript. Building polished interfaces where design and code meet."
         />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta property="og:title" content="Maxime Laforet - Front-End Developer" />
+        <meta property="og:title" content="Maxime Laforet - UI Engineer" />
         <meta property="og:image" content="/maxime-laforet.jpg" />
         <meta
           property="og:description"
-          content="Front-End Developer specializing in Next.js, React, and TypeScript"
+          content="UI Engineer specializing in Next.js, React, and TypeScript"
         />
         <meta property="og:url" content="https://macx.im" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -58,7 +58,7 @@ export default function Home({ allProjectsData }) {
                   </h1>
 
                   <p className="mb-6 text-lg text-zinc-600 font-medium">
-                    Front-End Design Engineer
+                    UI Engineer
                   </p>
 
                   <div className="mb-8 space-y-4 text-zinc-800 leading-relaxed">

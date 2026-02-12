@@ -16,7 +16,7 @@ details:
   - "/full/intuo/intuo-studio.png"
   - "/full/intuo/intuo-conversations-overview.png"
   - "/full/intuo/intuo-organisation-activity.png"
-excerpt: "Front-end and UX development for a SaaS platform focused on team management and performance. Built and scaled a design system while improving onboarding flows and dashboard usability."
+excerpt: "Front-end and UX/UI development for a SaaS platform focused on team management and performance. Built and scaled a design system while improving onboarding flows and dashboard usability."
 tags: ["Ember.js", "UX/UI", "Design System", "SaaS", "Ruby on Rails"]
 order: 10
 ---
