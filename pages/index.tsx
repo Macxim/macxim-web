@@ -137,6 +137,37 @@ export default function Home({ allProjectsData }) {
             </aside>
 
             <section className="lg:col-span-8">
+              <div className="p-8 text-white bg-zinc-900 rounded-2xl lg:p-10 mb-6 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 p-8 opacity-10 transition-opacity group-hover:opacity-20 pointer-events-none select-none">
+                  <span className="text-8xl font-black md:text-9xl">〃</span>
+                </div>
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between mb-8">
+                    <h2 className="text-3xl font-bold text-white">
+                      Side Projects
+                    </h2>
+                    <span className="px-3 py-1.5 text-xs font-semibold tracking-wider text-zinc-900 uppercase bg-white rounded-full">
+                      Featured
+                    </span>
+                  </div>
+                  <a href="https://ditto.macx.im/" target="_blank" rel="noopener noreferrer" className="block transition-transform hover:-translate-y-1">
+                    <h3 className="mb-3 text-2xl font-bold text-zinc-100">Ditto</h3>
+                    <p className="text-lg leading-relaxed text-zinc-400 max-w-2xl">
+                      A design-to-code practice space built on deliberate reproduction.
+                      Each study is a faithful rebuild of an existing design — an exercise
+                      in seeing, measuring, and internalizing the rules of rhythm, contrast,
+                      and craft.
+                    </p>
+                    <div className="flex items-center gap-2 mt-6 font-medium text-white">
+                      <span>View Project</span>
+                      <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
               <div className="p-8 bg-white border shadow-sm rounded-2xl border-zinc-200 lg:p-10 mb-6">
                 <h2 className="mb-6 text-3xl font-bold text-zinc-900">
                   AI Experiments & Lab
